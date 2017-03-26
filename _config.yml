@@ -24,6 +24,7 @@ github_username:  spacelab1
 
 # Build settings
 markdown: kramdown
+theme: jekyll-theme-tactile
 gems:
   - jekyll-feed
 exclude:
