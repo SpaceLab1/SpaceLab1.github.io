@@ -25,9 +25,10 @@
         <hr>
 
         <section id="main_content">
-          <h3>{{ page.title | default: "work log" }}</h3>
+          <h1>{{ page.title | default: "work log" }}</h1>
           <h3>{{ page.date }}</h3>
           {{ content }}
+          tags: {{ page.tags }}
         </section>
 
         <footer>
