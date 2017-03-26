@@ -16,15 +16,21 @@
 title: Spacelab 1
 email:
 description: > # this means to ignore newlines until "baseurl:"
-  Spacelab 1 is a makerspace in Mokena, a village a few miles outside of Chicago.
+  a community of makers and creatives who build for change
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: 1spacelab
 github_username:  spacelab1
+defaults:
+  -
+    scope:
+      path: "" # all files
+      type: "posts"
+    values:
+      author: "anonymous_spacelabber"
 
 # Build settings
 markdown: kramdown
-theme: jekyll-theme-tactile
 gems:
   - jekyll-feed
 exclude:

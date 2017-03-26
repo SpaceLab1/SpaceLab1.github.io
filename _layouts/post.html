@@ -17,28 +17,32 @@
       <div class="inner">
 
         <header>
+          <img src="/assets/images/logo.png" alt="spacelab's logo">
           <h1>{{ site.title | default: site.github.repository_name }}</h1>
           <h2>{{ site.description | default: site.github.project_tagline }}</h2>
         </header>
 
+        <hr>
+
+        <section id="main_content">
+          <h3>{{ page.title | default: "work log" }}</h3>
+          <h3>{{ page.date }}</h3>
+          {{ content }}
+        </section>
+
+        <footer>
+          <h2>Author: {{ post.author | default: page.author }}</h2>
+        {% if site.github.is_project_page %}
+          {{ site.title | default: site.github.repository_name }} is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a><br>
+        {% endif %}
         <section id="downloads" class="clearfix">
           {% if site.show_downloads %}
           <a href="{{ site.github.zip_url }}" id="download-zip" class="button"><span>Download .zip</span></a>
           <a href="{{ site.github.tar_url }}" id="download-tar-gz" class="button"><span>Download .tar.gz</span></a>
           {% endif %}
-          <a href="{{ site.github.repository_url }}" id="view-on-github" class="button"><span>View on GitHub</span></a>
+
         </section>
-
-        <hr>
-
-        <section id="main_content">
-          {{ content }}
-        </section>
-
-        <footer>
-        {% if site.github.is_project_page %}
-          {{ site.title | default: site.github.repository_name }} is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a><br>
-        {% endif %}          
+        <a href = ../index.html>up</a>
         </footer>
 
       </div>

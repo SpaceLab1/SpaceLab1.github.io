@@ -62,7 +62,12 @@ a {
   color: #d5000d;
 }
 a:hover {
-  color: #c5000c;
+  color: #cccccc;
+}
+
+
+h1.index-tagline {
+	color: #0079d5;
 }
 
 header {
@@ -164,7 +169,8 @@ a.button span {
   background: transparent url(../images/octocat-icon.png) 12px 50% no-repeat;
 }
 #view-on-github {
-  margin-right: 0;
+  margin-right: 175px;
+	margin-left: 175px;
 }
 
 code, pre {
